@@ -3,6 +3,13 @@
     $isDev = true;
     $age = 19;
 
+    echo $isYoung = $age < 40;
+    echo "<br>";
+    echo $equals = 33 === 33;
+    echo "<br>";
+    // echo $bald = !true;
+    echo "<br>";
+
     # Nivel global
     define('LOGO_URL', 'https://cdn.freebiesupply.com/logos/large/2x/php-1-logo-svg-vector.svg');
 
@@ -42,6 +49,7 @@
     echo "<br>";
 
     # 1º Forma de interpolar
+    # Solo las dobles comillas admiten interpolar.
     // $output = "Hola $name con una edad de $age. 🤑";
 
     # 2º Forma de interpolar
