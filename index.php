@@ -68,7 +68,14 @@
     $output = "Hola \$name con una edad de \$age. 🤑";
 ?>
 
-
+<!-- 2º Sintaxis condicional if-ele -->
+<?php if ($isYoung) : ?>
+    echo <h2>¡Eres joven 2!</h2>
+<?php elseif ($isDev) : ?>
+    echo <h2>¡No eres joven y eres dev 2! ☠️</h2>
+<?php else : ?>
+    echo <h2>¡Eres viejo 2!</h2>
+<?php endif?>
 
 <img src="<?= LOGO_URL ?>" alt="PHP Logo" width="200">
 
