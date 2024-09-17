@@ -3,6 +3,10 @@
     $isDev = true;
     $age = 19;
 
+    $edadText = '19';
+
+    $edad = (int) $edadText;
+
     var_dump($name);
     echo "<br>";
     var_dump($isDev);
@@ -34,7 +38,7 @@
 ?>
 
 <h1>
-    <?= "Hola " . $name ?> 
+    <?= "Hola " . $name . " con una edad de " . $age; ?> 
 </h1>
 
 <style>
