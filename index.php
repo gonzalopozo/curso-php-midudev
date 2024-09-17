@@ -1,5 +1,5 @@
 <h1>
-    <?php echo "Mi primera app"; ?>
+    <?= "Mi primera app"; ?>
 </h1>
 
 <style>
