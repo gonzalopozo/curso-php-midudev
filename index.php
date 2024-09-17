@@ -1,3 +1,14 @@
-<?php
+<h1>
+    <?php echo "Mi primera app"; ?>
+</h1>
 
-echo "hola mundo";
+<style>
+    :root {
+        color-scheme: light dark;
+    }
+
+    body {
+        display: grid;
+        place-content: center;
+    }
+</style>
