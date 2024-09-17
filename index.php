@@ -93,12 +93,20 @@
     $bestLanguages[] = "Java";
     # Asignación de items al array
     $bestLanguages[1] = "TypeScript";
+    $bestLanguages[3] = "Rust";
+    $bestLanguages[4] = "Solidity";
 
 ?>
 
 <h3>
     El mejor lenguaje es <?= $bestLanguages[1] ?>
 </h3>
+
+<ul>
+    <?php foreach ($bestLanguages as $language) : ?>
+        <li><?= $language ?></li>
+    <?php endforeach; ?>
+</ul>
 
 <h2><?= $outputAge ?></h2>
 
