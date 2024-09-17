@@ -35,16 +35,19 @@
     echo gettype($newAge2);
     echo "<br>";
 
+    # 1º Forma de interpolar
+    // $output = "Hola $name con una edad de $age. 🤑";
+
+    # 2º Forma de interpolar
+    $output = "Hola $name";
+    $output .= "con una edad de $age. 🤑";
+
+    $output = "Hola \$name con una edad de \$age. 🤑";
+
 ?>
 
 <h1>
-    <?= 
-    "Hola "
-        . $name
-        . " <br>, con una edad de "
-        . $age
-        . '. 🤑';
-    ?> 
+    <?= $output ?> 
 </h1>
 
 <style>
