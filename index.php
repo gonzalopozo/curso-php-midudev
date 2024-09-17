@@ -85,8 +85,20 @@
         $age < 40     => "Eres un adulto joven, $name 🧑",
         $age <= 70    => "Eres un adulto viejo, $name 🧑",
         default       => "¿Gandalf?, $name 🧙‍♂️"
-    }
+    };
+
+    # Declarar array
+    $bestLanguages = ["PHP", "JavaScript", "Python", 1, 2];
+    # Añadir items al array
+    $bestLanguages[] = "Java";
+    # Asignación de items al array
+    $bestLanguages[1] = "TypeScript";
+
 ?>
+
+<h3>
+    El mejor lenguaje es <?= $bestLanguages[1] ?>
+</h3>
 
 <h2><?= $outputAge ?></h2>
 
