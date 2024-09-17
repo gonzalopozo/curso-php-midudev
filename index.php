@@ -3,6 +3,12 @@
     $isDev = true;
     $age = 19;
 
+    # Nivel global
+    define('LOGO_URL', 'https://cdn.freebiesupply.com/logos/large/2x/php-1-logo-svg-vector.svg');
+
+    # Nivel archivo
+    const NOMBRE = 'Gonzalo2';
+
     $edadText = '19';
 
     $edad = (int) $edadText;
@@ -44,10 +50,16 @@
 
     $output = "Hola \$name con una edad de \$age. 🤑";
 
+
+
+
+
 ?>
 
+<img src="<?= LOGO_URL ?>" alt="PHP Logo" width="200">
+
 <h1>
-    <?= $output ?> 
+    <?= NOMBRE ?> 
 </h1>
 
 <style>
