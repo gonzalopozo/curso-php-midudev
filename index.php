@@ -38,7 +38,13 @@
 ?>
 
 <h1>
-    <?= "Hola " . $name . " con una edad de " . $age; ?> 
+    <?= 
+    "Hola "
+        . $name
+        . " <br>, con una edad de "
+        . $age
+        . '. 🤑';
+    ?> 
 </h1>
 
 <style>
