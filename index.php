@@ -7,8 +7,17 @@
     echo "<br>";
     echo $equals = 33 === 33;
     echo "<br>";
-    // echo $bald = !true;
+    echo $bald = !true;
     echo "<br>";
+
+    # 1º Sintaxis condicional if-ele
+    if ($isYoung) {
+        echo "<h2>¡Eres joven!</h2>";
+    } else if ($isDev) {
+        echo "<h2>¡No eres joven y eres dev! ☠️</h2>";
+    } else {
+        echo "<h2>¡Eres viejo!</h2>";
+    }
 
     # Nivel global
     define('LOGO_URL', 'https://cdn.freebiesupply.com/logos/large/2x/php-1-logo-svg-vector.svg');
@@ -57,12 +66,9 @@
     $output .= "con una edad de $age. 🤑";
 
     $output = "Hola \$name con una edad de \$age. 🤑";
-
-
-
-
-
 ?>
+
+
 
 <img src="<?= LOGO_URL ?>" alt="PHP Logo" width="200">
 
