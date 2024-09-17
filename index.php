@@ -1,5 +1,11 @@
+<?php
+    $name = "Gonzalo";
+    $isDev = true;
+    $age = 19;
+?>
+
 <h1>
-    <?= "Mi primera app"; ?>
+    <?= $name ?>
 </h1>
 
 <style>
