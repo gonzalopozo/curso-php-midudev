@@ -1,5 +1,7 @@
 <?php
 
+### 1º Forma de llamar a una API --> Permite GET, POST, PUT Y DELETE + VER STATUS CODE
+
 const API_URL = "https://whenisthenextmcufilm.com/api";
 # Inicializar una nueva sesión de curl; ch = cURL handel
 $ch = curl_init(API_URL);
@@ -13,6 +15,9 @@ $data = json_decode($result, true);
 curl_close($ch);
 
 var_dump($data);
+
+### 2º Forma de llamar a una API --> Permite solo GET
+// $result = file_get_contents(API_URL);
 ?>
 
 <head>
