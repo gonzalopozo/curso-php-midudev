@@ -103,8 +103,8 @@
 </h3>
 
 <ul>
-    <?php foreach ($bestLanguages as $language) : ?>
-        <li><?= $language ?></li>
+    <?php foreach ($bestLanguages as  $key => $language) : ?>
+        <li><?= ($key + 1) . ". " . $language ?></li>
     <?php endforeach; ?>
 </ul>
 
