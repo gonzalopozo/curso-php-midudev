@@ -95,7 +95,17 @@
     $bestLanguages[1] = "TypeScript";
     $bestLanguages[3] = "Rust";
     $bestLanguages[4] = "Solidity";
+    
+    # Arrays asociativos
+    $person = [
+        "name" => "Gonzalo",
+        "age" => 19,
+        "isDev" => true,
+        "languages" => ["JavaScript", "TypeScript", "Java"]
+    ];
 
+    $person["name"] = "Lebron";
+    $person["languages"][] = "Python";
 ?>
 
 <h3>
