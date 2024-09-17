@@ -25,6 +25,7 @@ curl_close($ch);
     <title>La próxima película de Marvel</title>
     <meta name="description" content="La próxima película de Marvel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.png">
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
@@ -32,6 +33,7 @@ curl_close($ch);
 </head>
 
 <main>
+    <h6>Creado por <a href="https://github.com/gonzalopozo"><b>Gonzalo Pozo</b></a> en PHP</h6>
 
     <section>
         <img src="<?= $data["poster_url"];?>" width="200" alt="Poster de <?= $data["title"]; ?>" style="border-radius: 16px;">
@@ -52,6 +54,11 @@ curl_close($ch);
     body {
         display: grid;
         place-content: center;
+    }
+
+    h6 {
+        text-align: center;
+        margin-bottom: 15px;
     }
 
     section {
