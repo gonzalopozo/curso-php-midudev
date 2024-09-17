@@ -67,9 +67,25 @@
 
     $output = "Hola \$name con una edad de \$age. 🤑";
 
-    $outputAge = $isYoung
-        ? '¡Eres joven!'
-        : '¡Eres viejo!';
+    # match hardcodeado
+    // $outputAge = match ($age) {
+    //     0, 1 ,2 => "Eres un bebé, $name 👶",
+    //     3, 4, 5, 6, 7, 8, 9, 10 => "Eres un niño, $name 👦",
+    //     11, 12, 13, 14, 15, 16, 17, 18 => "Eres un adolescente, $name 🧒",
+    //     19, 21, 22, 22, 23, 24, 25, 26, 27, 28, 29, 30 => "Eres un adulto joven, $name 🧑",
+    //     default => "Eres un adulto, $name 👨"
+    // }
+
+    # match estrategia booleans
+    $outputAge = match (true) {
+        $age < 2      => "Eres un bebé, $name 👶",
+        $age < 10     => "Eres un niño, $name 👦",
+        $age < 18     => "Eres un adolescente, $name 🧒",
+        $age === 18   => "Eres mayor de edad, $name 🍺",
+        $age < 40     => "Eres un adulto joven, $name 🧑",
+        $age <= 70    => "Eres un adulto viejo, $name 🧑",
+        default       => "¿Gandalf?, $name 🧙‍♂️"
+    }
 ?>
 
 <h2><?= $outputAge ?></h2>
