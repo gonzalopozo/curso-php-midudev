@@ -2,10 +2,13 @@
     $name = "Gonzalo";
     $isDev = true;
     $age = 19;
+
+    $newAge1 = $age + '1';
+    $newAge2 = $age . '1';
 ?>
 
 <h1>
-    <?= $name ?>
+    <?= $newAge ?> 
 </h1>
 
 <style>
